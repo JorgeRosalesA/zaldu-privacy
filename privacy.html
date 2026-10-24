@@ -26,26 +26,33 @@
             text-align: center;
             margin-bottom: 30px;
             border-bottom: 1px solid #2a2f3a;
-            padding-bottom: 20px;
+            padding-bottom: 25px;
+        }
+        .logo-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            object-fit: contain;
+            margin-bottom: 12px;
+            background: #ffffff;
+            padding: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         .logo-text {
             font-size: 28px;
             font-weight: bold;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
-        .logo-text span {
             color: #10b981;
+            letter-spacing: 1px;
         }
         h1 {
             color: #ffffff;
             font-size: 24px;
             margin-top: 10px;
+            margin-bottom: 5px;
         }
         .update-date {
             color: #9ca3af;
             font-size: 14px;
-            margin-bottom: 30px;
         }
         h2 {
             color: #10b981;
@@ -77,7 +84,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo-text">ZAL<span>DU</span></div>
+            <!-- Asegúrate de haber subido la imagen como logo.png a la raíz del repositorio -->
+            <img src="logo.png" alt="ZALDU Logo" class="logo-img">
+            <div class="logo-text">ZALDU</div>
             <h1>Política de Privacidad</h1>
             <div class="update-date">Última actualización: Octubre de 2026</div>
         </div>
