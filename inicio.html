@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-        content="ZALDU: aplicación para organizar ingresos, gastos, billeteras y presupuestos personales.">
-  <title>ZALDU — Organiza tus finanzas personales</title>
+        content="Organiza tus ingresos, planifica tus presupuestos y descubre en qué gastas tu dinero con ZALDU. Administra cuentas separadas en distintas divisas.">
+  <meta name="theme-color" content="#0f1115">
+  <title>ZALDU — Conoce adónde va tu dinero</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 24px;
@@ -15,8 +20,9 @@
                    Roboto, Helvetica, Arial, sans-serif;
       background: #0f1115;
       color: #e0e0e0;
-      line-height: 1.7;
+      line-height: 1.75;
     }
+
     main {
       max-width: 800px;
       margin: 40px auto;
@@ -24,83 +30,422 @@
       background: #1a1d24;
       border: 1px solid #2a2f3a;
       border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
+
     header {
       text-align: center;
       padding-bottom: 28px;
       border-bottom: 1px solid #2a2f3a;
     }
+
     .logo {
       width: 96px;
       height: 96px;
       padding: 6px;
-      background: white;
+      background: #ffffff;
       object-fit: contain;
       border-radius: 20px;
     }
+
     h1 {
       margin: 16px 0 8px;
-      color: white;
+      color: #ffffff;
       font-size: 36px;
+      line-height: 1.25;
     }
+
+    .lema {
+      margin-bottom: 0;
+      color: #e0e0e0;
+      font-size: 18px;
+    }
+
     h2 {
-      margin-top: 32px;
+      margin: 34px 0 12px;
       color: #39a978;
-      font-size: 22px;
+      font-size: 23px;
+      line-height: 1.4;
     }
-    p, li { color: #d1d5db; }
-    ul { padding-left: 22px; }
-    li { margin-bottom: 10px; }
+
+    h3 {
+      margin: 0 0 8px;
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    p,
+    li {
+      color: #d1d5db;
+      font-size: 16px;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    ul,
+    ol {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    .destacado {
+      margin: 22px 0;
+      padding: 18px 20px;
+      background: #222631;
+      border-left: 4px solid #39a978;
+      border-radius: 8px;
+    }
+
+    .destacado p:first-child {
+      margin-top: 0;
+    }
+
+    .destacado p:last-child {
+      margin-bottom: 0;
+    }
+
+    .ejemplo {
+      margin: 20px 0;
+      padding: 22px;
+      background: #151a20;
+      border: 1px solid #344039;
+      border-radius: 12px;
+    }
+
+    .ejemplo ul {
+      margin-bottom: 0;
+    }
+
+    .pasos {
+      padding-left: 26px;
+    }
+
+    .pasos li {
+      padding-left: 4px;
+      margin-bottom: 16px;
+    }
+
     a {
       color: #65d6a4;
       text-underline-offset: 4px;
       overflow-wrap: anywhere;
     }
+
+    a:hover {
+      color: #a0ebc8;
+    }
+
     a:focus-visible {
       outline: 3px solid #65d6a4;
       outline-offset: 5px;
+      border-radius: 2px;
     }
+
     footer {
-      margin-top: 32px;
+      margin-top: 34px;
       padding-top: 20px;
       border-top: 1px solid #2a2f3a;
     }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 12px;
+      }
+
+      main {
+        margin: 16px auto;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      .ejemplo,
+      .destacado {
+        padding: 18px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <main>
     <header>
-      <img class="logo" src="logo.png" alt="Logotipo de ZALDU">
+      <img
+        class="logo"
+        src="logo.png"
+        alt="Logotipo de ZALDU"
+        width="96"
+        height="96"
+      >
       <h1>ZALDU</h1>
-      <p>Ordena tu dinero y lleva el control de tus finanzas personales.</p>
+      <p class="lema">
+        Planifica tus gastos y conoce adónde va tu dinero.
+      </p>
     </header>
 
-    <section aria-labelledby="sobre">
-      <h2 id="sobre">¿Qué es ZALDU?</h2>
+    <section aria-labelledby="que-es">
+      <h2 id="que-es">Tus finanzas personales, con más claridad</h2>
       <p>
-        ZALDU es una aplicación de finanzas personales que te ayuda
-        a organizar tus ingresos, gastos, billeteras y presupuestos
-        en un mismo lugar.
+        ZALDU es una aplicación de uso personal que te ayuda a
+        organizar tus ingresos, planificar tus presupuestos y
+        llevar el control de lo que realmente gastas.
+      </p>
+      <p>
+        Al registrar tus movimientos, puedes identificar en qué
+        utilizas tu dinero, qué categorías concentran más gastos
+        y si estás cumpliendo lo que habías planificado.
+        Esa información te permite tomar decisiones y ajustar
+        tus próximos presupuestos.
       </p>
     </section>
 
-    <section aria-labelledby="funciones">
-      <h2 id="funciones">¿Qué puedes hacer?</h2>
+    <section aria-labelledby="presupuestos">
+      <h2 id="presupuestos">
+        Planifica primero y registra lo que realmente gastas
+      </h2>
+      <p>
+        Crea presupuestos para comida, transporte, servicios y
+        otras categorías. Tú decides cuánto dinero destinar
+        y después registras las compras o pagos cuando ocurren.
+      </p>
+
+      <div class="destacado">
+        <p>
+          <strong>
+            Presupuestar es apartar dinero para un gasto futuro.
+            Registrar un gasto es indicar que ese dinero ya
+            se utilizó.
+          </strong>
+        </p>
+        <p>
+          El monto presupuestado y el gasto real se consultan
+          por separado para que puedas comparar lo que
+          planeaste con lo que ocurrió.
+        </p>
+      </div>
+
+      <div class="ejemplo">
+        <h3>Un ejemplo con las compras de comida</h3>
+        <p>
+          Destinas <strong>₡100.000</strong> para comida durante
+          el mes. Ese es tu presupuesto; todavía no significa
+          que hayas comprado o pagado la comida.
+        </p>
+        <ul>
+          <li>
+            Si registras compras por <strong>₡75.000</strong>,
+            quedan <strong>₡25.000</strong> disponibles
+            dentro de ese presupuesto.
+          </li>
+          <li>
+            Si tus compras alcanzan <strong>₡100.000</strong>,
+            has utilizado todo lo que habías destinado.
+          </li>
+          <li>
+            Si registras compras por <strong>₡110.000</strong>,
+            puedes identificar que superaste tu presupuesto
+            por <strong>₡10.000</strong>.
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        Así puedes detectar si estás cerca de alcanzar el límite
+        antes de terminar el período y decidir cómo administrar
+        el dinero que queda.
+      </p>
+    </section>
+
+    <section aria-labelledby="primeros-pasos">
+      <h2 id="primeros-pasos">Empieza con orden</h2>
+      <p>
+        Para crear tu primer presupuesto, la organización
+        comienza con estos pasos:
+      </p>
+
+      <ol class="pasos">
+        <li>
+          <strong>Crea una billetera.</strong>
+          Registra los fondos que utilizarás para respaldar
+          tus presupuestos.
+        </li>
+        <li>
+          <strong>Crea una categoría de gasto.</strong>
+          Dale un propósito al dinero que vas a destinar,
+          como comida, transporte o servicios.
+        </li>
+        <li>
+          <strong>Crea tu presupuesto.</strong>
+          Selecciona la categoría, la fecha, la frecuencia,
+          las billeteras que lo respaldan y el monto.
+        </li>
+      </ol>
+
+      <p>
+        Para crear un presupuesto necesitas tener una billetera
+        y una categoría de gasto. Después podrás registrar
+        los gastos reales conforme realizas tus compras y pagos.
+      </p>
+    </section>
+
+    <section aria-labelledby="registro">
+      <h2 id="registro">Lleva el control a tu ritmo</h2>
+      <p>
+        Puedes registrar tus gastos diariamente o reunir tus
+        movimientos e ingresarlos cuando te resulte conveniente.
+        Si gastas dinero todos los días, registrarlo cada día
+        te ayuda a mantener una visión más actualizada.
+      </p>
+      <p>
+        ZALDU refleja la información que tú registras.
+        Cuanto más completos y actualizados estén tus movimientos,
+        mejor podrás conocer cuánto has gastado y cuánto
+        queda disponible.
+      </p>
+    </section>
+
+    <section aria-labelledby="billeteras">
+      <h2 id="billeteras">Organiza tus fondos en billeteras</h2>
+      <p>
+        Las billeteras te permiten organizar los fondos que
+        registras y respaldar el dinero destinado a tus
+        presupuestos.
+      </p>
+      <p>
+        Puedes distribuir tus presupuestos entre las billeteras
+        correspondientes y consultar cómo estás organizando
+        tu dinero dentro de cada cuenta financiera.
+      </p>
+    </section>
+
+    <section aria-labelledby="divisas">
+      <h2 id="divisas">Varias cuentas, distintas divisas</h2>
+      <p>
+        Dentro de tu mismo perfil puedes tener una cuenta
+        financiera principal y crear cuentas adicionales,
+        cada una con el nombre y la divisa que elijas
+        entre las opciones disponibles.
+      </p>
+      <p>
+        Por ejemplo, puedes administrar tus ingresos y gastos
+        habituales en una cuenta en colones costarricenses
+        y organizar un ingreso extra en otra cuenta en dólares.
+      </p>
+      <p>
+        Cada cuenta mantiene sus billeteras, presupuestos,
+        movimientos y saldos separados, mientras tú accedes
+        a todas desde el mismo perfil de ZALDU.
+      </p>
+    </section>
+
+    <section aria-labelledby="continuidad">
+      <h2 id="continuidad">
+        Continúa cada mes sin empezar de cero
+      </h2>
+      <p>
+        Al cambiar de mes, ZALDU traslada tus billeteras y da
+        continuidad a tus presupuestos según su frecuencia,
+        para que no tengas que volver a ingresar toda
+        tu organización.
+      </p>
+      <p>
+        Puedes planificar pagos mensuales, trimestrales,
+        semestrales o anuales, además de presupuestos
+        de una sola vez. Cada presupuesto conserva la
+        frecuencia que le corresponde: un pago anual
+        no se convierte en un pago mensual.
+      </p>
+
+      <div class="destacado">
+        <p>
+          <strong>Los registros de gastos no se copian al mes siguiente.</strong>
+          Las compras y los pagos reales de cada período
+          los registras tú cuando ocurren.
+        </p>
+      </div>
+
+      <p>
+        Así mantienes tu planificación y evitas repetir
+        el trabajo de crear numerosas billeteras
+        y presupuestos todos los meses.
+      </p>
+    </section>
+
+    <section aria-labelledby="historial">
+      <h2 id="historial">Conserva el historial de tus meses anteriores</h2>
+      <p>
+        Puedes consultar los movimientos de los meses
+        anteriores para revisar lo que ingresaste,
+        presupuestaste y gastaste.
+      </p>
+      <p>
+        La información de esos meses queda disponible
+        para consulta y no se puede editar. Puedes
+        modificar la información del mes actual y
+        planificar o ajustar los períodos futuros,
+        de acuerdo con la frecuencia de tus presupuestos.
+      </p>
+      <p>
+        Esto te permite conservar un historial estable
+        y comparar períodos para comprender mejor
+        tus hábitos de gasto.
+      </p>
+    </section>
+
+    <section aria-labelledby="consultas">
+      <h2 id="consultas">Revisa tus movimientos y reconoce tus hábitos</h2>
       <ul>
-        <li>Registrar y consultar tus ingresos y gastos.</li>
-        <li>Organizar tu dinero en billeteras.</li>
-        <li>Crear presupuestos por categoría y consultar su avance.</li>
-        <li>Consultar tus movimientos y resúmenes por período.</li>
-        <li>Configurar recordatorios para tus presupuestos.</li>
+        <li>
+          Consulta tus ingresos y gastos registrados.
+        </li>
+        <li>
+          Compara lo presupuestado con lo realmente gastado
+          en cada categoría.
+        </li>
+        <li>
+          Revisa tus movimientos, resúmenes y reportes
+          por período.
+        </li>
+        <li>
+          Identifica las categorías en las que estás
+          utilizando más dinero.
+        </li>
+        <li>
+          Configura recordatorios para tus presupuestos
+          y sus próximas fechas de pago.
+        </li>
       </ul>
     </section>
 
     <section aria-labelledby="acceso">
       <h2 id="acceso">Acceso a tu cuenta</h2>
       <p>
-        ZALDU incorpora el inicio de sesión con Google y Microsoft
-        para identificarte y permitirte acceder a tu cuenta.
-        Esta página es informativa; el registro y el inicio de sesión
+        ZALDU incorpora el registro y el inicio de sesión
+        mediante Google y Microsoft para identificarte
+        y permitirte acceder a tu cuenta.
+      </p>
+      <p>
+        Esta página presenta las funciones de ZALDU.
+        La creación de cuentas y el inicio de sesión
         se realizan desde la aplicación.
       </p>
     </section>
@@ -108,8 +453,9 @@
     <section aria-labelledby="privacidad">
       <h2 id="privacidad">Tu privacidad</h2>
       <p>
-        Consulta nuestra política para conocer cómo se recopila,
-        utiliza y protege la información al usar ZALDU.
+        Consulta nuestra política para conocer cómo
+        se recopila, utiliza y protege la información
+        al usar ZALDU.
       </p>
       <p>
         <a href="https://privacy.zaldu-cf.com/">
@@ -121,8 +467,11 @@
     <footer>
       <p>
         <strong>Contacto y soporte:</strong>
-        <a href="mailto:support@zaldu-cf.com">support@zaldu-cf.com</a>
+        <a href="mailto:support@zaldu-cf.com">
+          support@zaldu-cf.com
+        </a>
       </p>
+      <p>ZALDU — Organiza, planifica y comprende tus gastos.</p>
     </footer>
   </main>
 </body>
