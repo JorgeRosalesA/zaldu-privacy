@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="ZALDU: aplicación para organizar ingresos, gastos, billeteras y presupuestos personales.">
+  <title>ZALDU — Organiza tus finanzas personales</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background: #0f1115;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: clamp(24px, 6vw, 48px);
+      background: #1a1d24;
+      border: 1px solid #2a2f3a;
+      border-radius: 16px;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #2a2f3a;
+    }
+    .logo {
+      width: 96px;
+      height: 96px;
+      padding: 6px;
+      background: white;
+      object-fit: contain;
+      border-radius: 20px;
+    }
+    h1 {
+      margin: 16px 0 8px;
+      color: white;
+      font-size: 36px;
+    }
+    h2 {
+      margin-top: 32px;
+      color: #39a978;
+      font-size: 22px;
+    }
+    p, li { color: #d1d5db; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 10px; }
+    a {
+      color: #65d6a4;
+      text-underline-offset: 4px;
+      overflow-wrap: anywhere;
+    }
+    a:focus-visible {
+      outline: 3px solid #65d6a4;
+      outline-offset: 5px;
+    }
+    footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid #2a2f3a;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img class="logo" src="logo.png" alt="Logotipo de ZALDU">
+      <h1>ZALDU</h1>
+      <p>Ordena tu dinero y lleva el control de tus finanzas personales.</p>
+    </header>
+
+    <section aria-labelledby="sobre">
+      <h2 id="sobre">¿Qué es ZALDU?</h2>
+      <p>
+        ZALDU es una aplicación de finanzas personales que te ayuda
+        a organizar tus ingresos, gastos, billeteras y presupuestos
+        en un mismo lugar.
+      </p>
+    </section>
+
+    <section aria-labelledby="funciones">
+      <h2 id="funciones">¿Qué puedes hacer?</h2>
+      <ul>
+        <li>Registrar y consultar tus ingresos y gastos.</li>
+        <li>Organizar tu dinero en billeteras.</li>
+        <li>Crear presupuestos por categoría y consultar su avance.</li>
+        <li>Consultar tus movimientos y resúmenes por período.</li>
+        <li>Configurar recordatorios para tus presupuestos.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="acceso">
+      <h2 id="acceso">Acceso a tu cuenta</h2>
+      <p>
+        ZALDU incorpora el inicio de sesión con Google y Microsoft
+        para identificarte y permitirte acceder a tu cuenta.
+        Esta página es informativa; el registro y el inicio de sesión
+        se realizan desde la aplicación.
+      </p>
+    </section>
+
+    <section aria-labelledby="privacidad">
+      <h2 id="privacidad">Tu privacidad</h2>
+      <p>
+        Consulta nuestra política para conocer cómo se recopila,
+        utiliza y protege la información al usar ZALDU.
+      </p>
+      <p>
+        <a href="https://privacy.zaldu-cf.com/">
+          Leer la Política de Privacidad
+        </a>
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        <strong>Contacto y soporte:</strong>
+        <a href="mailto:support@zaldu-cf.com">support@zaldu-cf.com</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
